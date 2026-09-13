@@ -14,6 +14,11 @@ const ICONS = {
   concepts: BrainCircuit,
 };
 
+const LEVELS = {
+  strong: { width: "92%", tag: null },
+  familiar: { width: "55%", tag: "Familiar" },
+};
+
 export default function Skills() {
   const [ref, inView] = useInView();
   const categories = Object.entries(portfolio.skills);
@@ -47,15 +52,42 @@ export default function Skills() {
                   </span>
                   <h3 className="font-medium">{cat.label}</h3>
                 </div>
-                <ul className="space-y-3">
-                  {cat.items.map((item) => (
-                    <li key={item.name} className="flex flex-col">
-                      <span className="text-sm font-medium">{item.name}</span>
-                      <span className="text-xs mt-0.5" style={{ color: "var(--text-muted)" }}>
-                        {item.note}
-                      </span>
-                    </li>
-                  ))}
+                <ul className="space-y-4">
+                  {cat.items.map((item) => {
+                    const level = LEVELS[item.level] || LEVELS.strong;
+                    return (
+                      <li key={item.name}>
+                        <div className="flex items-center justify-between gap-2 mb-1.5">
+                          <span className="text-sm font-medium">{item.name}</span>
+                          {level.tag && (
+                            <span
+                              className="text-[10px] px-1.5 py-0.5 rounded-full shrink-0"
+                              style={{ background: "var(--accent-soft)", color: "var(--accent)" }}
+                            >
+                              {level.tag}
+                            </span>
+                          )}
+                        </div>
+                        <div
+                          className="h-1.5 rounded-full overflow-hidden"
+                          style={{ background: "var(--border)" }}
+                        >
+                          <motion.div
+                            className="h-full rounded-full"
+                            style={{ background: "var(--accent)" }}
+                            initial={{ width: 0 }}
+                            animate={{ width: inView ? level.width : 0 }}
+                            transition={{ duration: 0.6, ease: "easeOut", delay: i * 0.08 }}
+                          />
+                        </div>
+                        {item.note && (
+                          <p className="text-xs mt-1.5" style={{ color: "var(--text-muted)" }}>
+                            {item.note}
+                          </p>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               </motion.div>
             );

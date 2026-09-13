@@ -39,17 +39,17 @@ export const portfolio = {
     programming: {
       label: "Programming",
       items: [
-        { name: "Python", note: "Primary language for scripting & backend logic" },
-        { name: "SQL", note: "Querying, joins, schema design" },
-        { name: "JavaScript (Basic)", note: "Frontend fundamentals" },
+        { name: "Python", level: "strong", note: "Primary language for scripting & backend logic" },
+        { name: "SQL", level: "strong", note: "Querying, joins, schema design" },
+        { name: "JavaScript", level: "familiar", note: "Frontend fundamentals" },
       ],
     },
     backend: {
       label: "Backend Frameworks",
       items: [
-        { name: "Django", note: "Models, views, ORM" },
-        { name: "Django REST Framework", note: "Building REST APIs" },
-        { name: "FastAPI", note: "Fast, typed, async-ready APIs" },
+        { name: "Django",level: "strong", note: "Models, views, ORM" },
+        { name: "Django REST Framework",level: "strong", note: "Building REST APIs" },
+        { name: "FastAPI",level: "strong", note: "Fast, typed, async-ready APIs" },
       ],
     },
     api: {
@@ -57,15 +57,15 @@ export const portfolio = {
       items: [
         { name: "REST APIs", note: "Designing & consuming endpoints" },
         { name: "JWT Authentication", note: "Secure user sessions" },
-        { name: "OAuth (Basic)", note: "Third-party authentication flows" },
+        { name: "OAuth ", level: "familiar", note: "Third-party authentication flows" },
         { name: "Pydantic", note: "Request/response validation" },
-        { name: "Swagger/OpenAPI (Basic)", note: "API documentation" },
+        { name: "Swagger/OpenAPI ", level: "familiar", note: "API documentation" },
       ],
     },
     data: {
       label: "Data Engineering",
       items: [
-        { name: "PySpark", note: "Distributed data processing with Spark" },
+        { name: "PySpark",level: "strong", note: "Distributed data processing with Spark" },
         { name: "Apache Spark", note: "Batch data processing" },
         { name: "Data Warehouse Concepts", note: "Structuring data for analytics" },
       ],
@@ -85,8 +85,8 @@ export const portfolio = {
       label: "Data Analysis & Visualization",
       items: [
         { name: "Pandas", note: "Data manipulation & analysis" },
-        { name: "NumPy (Basic)", note: "Numerical computing" },
-        { name: "Power BI (Basic)", note: "Dashboards & reporting" },
+        { name: "NumPy", level: "familiar", note: "Numerical computing" },
+        { name: "Power BI", level: "familiar", note: "Dashboards & reporting" },
         { name: "MS Excel", note: "Data analysis & reporting" },
       ],
     },
