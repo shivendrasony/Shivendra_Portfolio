@@ -17,7 +17,7 @@ export const portfolio = {
     github: "https://github.com/shivendrasony/",
     linkedin: "https://www.linkedin.com/in/shivendra-sony-8232b5247/",
     resume: "/resume/Shivendra-Sony-Resume.pdf",
-    photo: "/images/profile.jpg",
+    photo: "/images/image.png",
   },
 
   about: {
