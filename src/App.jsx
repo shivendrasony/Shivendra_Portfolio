@@ -11,6 +11,7 @@ import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
+import AskBot from "./components/AskBot";
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -31,6 +32,7 @@ function App() {
       </main>
       <Footer />
       <BackToTop />
+      <AskBot />
     </>
   );
 }
