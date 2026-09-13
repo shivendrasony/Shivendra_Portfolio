@@ -150,7 +150,7 @@ export const portfolio = {
         "Strengthened my grasp of JWT authentication and role-based access control, modular Django app design, and building REST APIs that handle real-world CRUD, search, and scheduling logic.",
       github: "https://github.com/shivendrasony/ghardekho-backend",
       githubFrontend: "https://github.com/shivendrasony/ghardekho-frontend",
-      demo: "", // TODO: Add live demo URL if deployed
+      demo: "https://ghardekho-frontend.vercel.app/", // TODO: Add live demo URL if deployed
       image: "/images/projects/ghardekho.png",
     },
     {
