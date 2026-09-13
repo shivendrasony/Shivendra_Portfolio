@@ -151,7 +151,7 @@ export const portfolio = {
       github: "https://github.com/shivendrasony/ghardekho-backend",
       githubFrontend: "https://github.com/shivendrasony/ghardekho-frontend",
       demo: "", // TODO: Add live demo URL if deployed
-      image: null,
+      image: "/images/projects/ghardekho.png",
     },
     {
       id: "blog-app-fastapi",
@@ -177,7 +177,7 @@ export const portfolio = {
         "Got hands-on with FastAPI's async-friendly design, Pydantic validation, and structuring a backend around clean architecture principles.",
       github: "https://github.com/shivendrasony/Blog_APP_FastAPI",
       demo: "",
-      image: null,
+      image: "/images/projects/blog_app.png",
     },
     {
       id: "ai-customer-risk-analyzer",
@@ -202,7 +202,7 @@ export const portfolio = {
         "Learned how to take a model out of a notebook and into a deployed, interactive dashboard people can actually use.",
       github: "https://github.com/shivendrasony/Shivendra_Ann_Analyze",
       demo: "https://shiv-ann-analyze.streamlit.app",
-      image: null,
+      image: "/images/projects/analysr.png",
     },
     {
       id: "tic-tac-toe",
@@ -227,7 +227,7 @@ export const portfolio = {
         "Got hands-on with real-time state synchronization from scratch using Node's built-in HTTP module, without leaning on a framework.",
       github: "https://github.com/shivendrasony/Tic-Tac-Toe",
       demo: "https://tic-tac-toe-b2b4.onrender.com/",
-      image: null,
+      image: "/images/projects/tic-tac-toe.png",
     },
   ],
 

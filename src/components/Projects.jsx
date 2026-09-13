@@ -63,14 +63,27 @@ export default function Projects() {
             >
               <div
                 className="h-44 flex items-center justify-center border-b border-[var(--border)] overflow-hidden relative"
-                style={{
-                  background:
-                    "repeating-linear-gradient(135deg, var(--bg) 0px, var(--bg) 10px, var(--border) 10px, var(--border) 11px)",
-                }}
+                style={
+                  project.image
+                    ? {}
+                    : {
+                        background:
+                          "repeating-linear-gradient(135deg, var(--bg) 0px, var(--bg) 10px, var(--border) 10px, var(--border) 11px)",
+                      }
+                }
               >
-                <span className="font-[var(--font-mono)] text-xs px-3 py-1.5 rounded-full border border-[var(--border)] bg-[var(--surface)] transition-transform duration-300 group-hover:scale-105">
-                  {project.name}
-                </span>
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={`${project.name} screenshot`}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                ) : (
+                  <span className="font-[var(--font-mono)] text-xs px-3 py-1.5 rounded-full border border-[var(--border)] bg-[var(--surface)] transition-transform duration-300 group-hover:scale-105">
+                    {project.name}
+                  </span>
+                )}
               </div>
 
               <div className="p-6 flex flex-col flex-1">
