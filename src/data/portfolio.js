@@ -16,7 +16,7 @@ export const portfolio = {
     phone: "+91 8210877490",
     github: "https://github.com/shivendrasony/",
     linkedin: "https://www.linkedin.com/in/shivendra-sony-8232b5247/",
-    resume: "/resume/Shivendra-Sony-Resume.pdf",
+    resume: "/resume/Shivendra_Sony_Resume.pdf",
     photo: "/images/image.png",
   },
 

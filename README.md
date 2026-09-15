@@ -121,5 +121,5 @@ public/
 ├── images/
 │   └── profile.jpg
 └── resume/
-    └── Shivendra-Sony-Resume.pdf
+    └── Shivendra_Sony_Resume.pdf
 ```
