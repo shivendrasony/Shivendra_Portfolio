@@ -283,7 +283,7 @@ export const portfolio = {
       institution: "Maharishi Markandeshwar University",
       location: "Mullana",
       year: "Aug 2022 – May 2026",
-      score: "CGPA: 7.82/10",
+      score: "CGPA: 7.78/10",
     },
     {
       degree: "Class XII (PCM)",
