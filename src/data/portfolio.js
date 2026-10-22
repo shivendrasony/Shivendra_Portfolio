@@ -236,6 +236,11 @@ export const portfolio = {
   // README descriptions available to source real feature claims from).
   otherProjects: [
     {
+      name: "Mystery Delivery System",
+      language: "Python",
+      github: "https://github.com/shivendrasony/mystery-delivery-system",
+    },  
+    {
       name: "BhoomiKart",
       language: "TypeScript",
       github: "https://github.com/shivendrasony/BhoomiKart",
