@@ -183,7 +183,17 @@ export default function Projects() {
           </div>
         </div>
       )}
-
+      <div className="mt-8 flex justify-center">
+        <a
+          href="https://github.com/shivendrasony?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-6 py-3 font-medium transition-all duration-300 hover:border-white/40 hover:bg-white/10"
+          >
+          More on GitHub
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
       {activeProject && (
         <ProjectModal project={activeProject} onClose={() => setActiveProject(null)} />
       )}
